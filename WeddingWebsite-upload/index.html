@@ -1,0 +1,1032 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding | A Beautiful Beginning</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #faf6ef;
+            color: #514039;
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px 20px;
+            position: relative;
+            overflow: hidden;
+            background:
+                radial-gradient(ellipse at top, #fffdf8 0%, transparent 65%),
+                linear-gradient(135deg, #faf6ef, #f4e8df);
+        }
+
+        .hero::before,
+        .hero::after {
+            content: "✦";
+            position: absolute;
+            color: #c6a66b;
+            font-size: 28px;
+            opacity: 0.6;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .hero::before {
+            top: 15%;
+            left: 12%;
+        }
+
+        .hero::after {
+            bottom: 15%;
+            right: 12%;
+            animation-delay: 2s;
+        }
+
+        .invitation {
+            max-width: 700px;
+            width: 100%;
+            padding: 55px 25px;
+            border: 1px solid #d4bc8c;
+            outline: 1px solid #d4bc8c;
+            outline-offset: 8px;
+            animation: reveal 1.5s ease both;
+        }
+
+        .eyebrow {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 12px;
+            color: #a58a60;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: clamp(55px, 10vw, 90px);
+            font-weight: 400;
+            color: #9b7951;
+            line-height: 1.3;
+        }
+
+        .ampersand {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 35px;
+            font-style: italic;
+            color: #c18c91;
+            margin: 0 8px;
+        }
+
+        .subtitle {
+            margin-top: 22px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            line-height: 1.8;
+        }
+
+        .divider {
+            width: 90px;
+            height: 1px;
+            background: #c6a66b;
+            margin: 30px auto;
+        }
+
+        .date {
+            font-size: 17px;
+            letter-spacing: 3px;
+            color: #9b7951;
+        }
+
+        .open-button {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 14px 32px;
+            border: 1px solid #b99b68;
+            background: transparent;
+            color: #8d704b;
+            font-family: inherit;
+            font-size: 16px;
+            letter-spacing: 2px;
+            cursor: pointer;
+            transition: all 0.4s ease;
+        }
+
+        .open-button:hover {
+            background: #b99b68;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .footer {
+            margin-top: 35px;
+            font-size: 13px;
+            color: #a58a60;
+            letter-spacing: 2px;
+        }
+
+        @keyframes reveal {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        @media (max-width: 480px) {
+            .invitation {
+                padding: 45px 15px;
+            }
+
+            .eyebrow {
+                letter-spacing: 3px;
+                font-size: 10px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+            }
+        }
+/* Premium photo hover effect */
+#couple-gallery img,
+#family-photo img,
+#childhood-memories img,
+#hero img,
+#journey-of-love img,
+#love-story img {
+transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#couple-gallery img:hover,
+#family-photo img:hover,
+#childhood-memories img:hover,
+#hero img:hover,
+#journey-of-love img:hover,
+#love-story img:hover {
+transform: scale(1.04);
+box-shadow: 0 12px 28px rgba(181, 150, 89, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+#couple-gallery img,
+#family-photo img,
+#childhood-memories img,
+#hero img,
+#journey-of-love img,
+#love-story img {
+transition: none;
+}
+}
+
+
+    </style>
+</head>
+
+<body>
+
+    <section class="hero">
+        <div class="invitation">
+
+            <p class="eyebrow">Together with our families</p>
+
+            <h1>Noel <span class="ampersand">&</span> Sisna</h1>
+
+            <p class="subtitle">
+                REQUEST THE PLEASURE OF YOUR COMPANY<br>
+                AS WE BEGIN OUR FOREVER
+            </p>
+
+            <div class="divider"></div>
+
+            <p class="date">DECEMBER 30 · 2026</p>
+
+            <button class="open-button" onclick="showMessage()">
+                OPEN INVITATION ♡
+            </button>
+            <a href="https://wa.me/?text=You%20are%20invited%20to%20the%20wedding%20of%20Noel%20Binoy%20and%20Sisna%20Maria%20Remitta%20on%2030%20December%202026%20at%20Holy%20Family%20Forane%20Church%2C%20Ponkunnam.%20We%20hope%20you%20can%20join%20us!%20%F0%9F%92%8D"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="display:inline-block; margin-top:15px; padding:12px 24px; background:#25D366; color:white; text-decoration:none; border-radius:30px; font-size:13px; letter-spacing:1px;">
+    💚 SHARE INVITATION ON WHATSAPP
+</a>
+
+            <p class="footer">A BEAUTIFUL BEGINNING</p>
+
+        </div>
+    </section>
+
+
+
+
+<script>
+function showMessage() {
+  if (document.getElementById("wedding-popup")) return;
+
+  const popup = document.createElement("div");
+  popup.id = "wedding-popup";
+
+  popup.innerHTML = `
+    <div class="popup-card">
+      <button class="popup-close" aria-label="Close invitation">&times;</button>
+      <div class="popup-flower">✿</div>
+      <p class="popup-label">TOGETHER WITH THEIR FAMILIES</p>
+      <h2>Noel Binoy</h2>
+      <p class="popup-and">&</p>
+      <h2>Sisna Maria Remitta</h2>
+      <div class="popup-line"></div>
+      <p class="popup-message">
+        With love and happiness, we invite you to celebrate
+        our special day with us.
+      </p>
+      <p class="popup-date">30 DECEMBER 2026</p>
+      <p class="popup-day">WEDNESDAY</p>
+      <p class="popup-venue">Venue: Holy Family Forane Church Ponkunnam</p>
+      <p class="popup-love">A new chapter begins with love ♡</p>
+    </div>
+  `;
+
+  document.body.appendChild(popup);
+
+Object.assign(popup.style, {
+  position: "fixed",
+  top: "0",
+  left: "0",
+  right: "0",
+  bottom: "0",
+  width: "100%",
+  height: "100%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  zIndex: "999999",
+  boxSizing: "border-box"
+});
+
+  requestAnimationFrame(() => {
+    popup.classList.add("popup-visible");
+  });
+
+  popup.querySelector(".popup-close").addEventListener("click", () => {
+    popup.classList.remove("popup-visible");
+    setTimeout(() => popup.remove(), 200);
+  });
+
+  popup.addEventListener("click", (event) => {
+    if (event.target === popup) {
+      popup.querySelector(".popup-close").click();
+    }
+  });
+}
+</script>
+
+
+</script>
+
+
+
+    </script>
+
+    <section id="countdown" style="text-align:center; padding:60px 20px; background:linear-gradient(135deg,#fffaf0,#f8eee5); color:#8b6f47;">
+
+  <p style="letter-spacing:5px; font-size:12px;">OUR SPECIAL DAY</p>
+
+  <h2 style="font-family:Georgia,serif; font-size:36px; font-weight:normal;">
+    Counting Down to Forever
+  </h2>
+
+  <p style="font-family:Georgia,serif; font-size:20px; color:#6f5545;">
+    Noel Binoy <span style="color:#c6a15b;">&amp;</span> Sisna Maria Remitta
+  </p>
+
+  <div style="width:70px; height:2px; background:#c6a15b; margin:25px auto;"></div>
+
+  <div id="timer" style="display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+
+
+<div style="background:#fffdf8; border:1px solid #dfc58c; border-radius:12px; padding:20px 15px; min-width:75px;">
+  <strong id="days" style="font-size:32px;">0</strong>
+  <div style="font-size:11px; letter-spacing:2px; margin-top:8px;">DAYS</div>
+</div>
+
+<div style="background:#fffdf8; border:1px solid #dfc58c; border-radius:12px; padding:20px 15px; min-width:75px;">
+  <strong id="hours" style="font-size:32px;">0</strong>
+  <div style="font-size:11px; letter-spacing:2px; margin-top:8px;">HOURS</div>
+</div>
+
+<div style="background:#fffdf8; border:1px solid #dfc58c; border-radius:12px; padding:20px 15px; min-width:75px;">
+  <strong id="minutes" style="font-size:32px;">0</strong>
+  <div style="font-size:11px; letter-spacing:2px; margin-top:8px;">MINUTES</div>
+</div>
+
+<div style="background:#fffdf8; border:1px solid #dfc58c; border-radius:12px; padding:20px 15px; min-width:75px;">
+  <strong id="seconds" style="font-size:32px;">0</strong>
+  <div style="font-size:11px; letter-spacing:2px; margin-top:8px;">SECONDS</div>
+</div>
+
+
+  </div>
+
+  <p style="margin-top:30px; font-family:Georgia,serif; font-style:italic;">
+    Two hearts, one beautiful beginning. ♡
+  </p>
+
+</section>
+<section id="wedding-details" style="padding:70px 20px; text-align:center; background:linear-gradient(135deg,#fffaf0,#f8eee5); color:#765b45;">
+
+<div id="gallery-lightbox" onclick="closeGallery()" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.9); z-index:9999; align-items:center; justify-content:center; padding:20px;">
+  <span onclick="closeGallery()" style="position:absolute; top:20px; right:30px; color:white; font-size:40px; cursor:pointer;">&times;</span>
+  <img id="gallery-large-image" src="" alt="Expanded couple photo" style="max-width:95%; max-height:90vh; object-fit:contain; border-radius:10px;">
+</div>
+
+<style>
+@media (max-width: 768px) {
+  #couple-gallery > div[style*="display:grid"] {
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:10px !important;
+  }
+
+  #couple-gallery img {
+    height:170px !important;
+  }
+}
+</style>
+
+<script>
+function openGallery(img) {
+  document.getElementById("gallery-large-image").src = img.src;
+  document.getElementById("gallery-lightbox").style.display = "flex";
+}
+
+function closeGallery() {
+  document.getElementById("gallery-lightbox").style.display = "none";
+}
+</script>
+
+  <p style="font-size:12px; letter-spacing:5px; color:#b59659;">JOIN US TO CELEBRATE</p>
+
+  <h2 style="font-family:Georgia,serif; font-size:36px; font-weight:normal;">
+    Wedding Details
+  </h2>
+
+  <p style="font-size:16px; margin-bottom:35px;">
+    Wednesday · 30 December 2026
+  </p>
+
+  <div style="display:flex; justify-content:center; gap:25px; flex-wrap:wrap;">
+
+
+<div style="width:280px; padding:30px 20px; background:#fffdf8; border:1px solid #dfc58c; border-radius:15px;">
+  <div style="font-size:35px;">💍</div>
+  <h3 style="font-family:Georgia,serif; font-weight:normal;">Wedding Ceremony</h3>
+  <p style="line-height:1.8; color:#887767;">
+  Venue<br>
+  <strong>Holy Family Forane Church</strong><br>
+  Ponkunnam, Kerala
+</p>
+<a href="https://www.google.com/maps/search/?api=1&query=Holy+Family+Forane+Church+Ponkunnam+Kerala"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="display:inline-block; margin-top:12px; padding:10px 18px; background:#c6a15b; color:white; text-decoration:none; border-radius:25px; font-size:13px; letter-spacing:1px;">
+  📍 VIEW LOCATION
+</a>
+
+</div>
+
+<div style="width:280px; padding:30px 20px; background:#fffdf8; border:1px solid #dfc58c; border-radius:15px;">
+  <div style="font-size:35px;">🥂</div>
+  <h3 style="font-family:Georgia,serif; font-weight:normal;">Wedding Reception</h3>
+  <p style="line-height:1.8; color:#887767;">
+    Date: 30 December 2026<br>
+    Venue details<br>
+    <strong>Holy Family Forane Parish Hall</strong>
+  </p>
+</div>
+
+
+  </div>
+
+  <p style="margin-top:35px; font-family:Georgia,serif; font-style:italic; color:#b59659;">
+    Your presence will make our day even more special. ♡
+  </p>
+
+</section>
+
+
+<script>
+  function updateCountdown() {
+    const weddingDate = new Date("2026-12-30T00:00:00").getTime();
+    const now = new Date().getTime();
+    const difference = weddingDate - now;
+
+    if (difference <= 0) {
+      document.getElementById("timer").innerHTML = "The Wedding Day Is Here! ❤️";
+      return;
+    }
+
+    document.getElementById("days").textContent =
+      Math.floor(difference / (1000 * 60 * 60 * 24));
+
+    document.getElementById("hours").textContent =
+      Math.floor((difference / (1000 * 60 * 60)) % 24);
+
+    document.getElementById("minutes").textContent =
+      Math.floor((difference / (1000 * 60)) % 60);
+
+    document.getElementById("seconds").textContent =
+      Math.floor((difference / 1000) % 60);
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
+<section id="our-story" style="padding:70px 20px; text-align:center; background:#fffdf8; color:#765b45;">
+
+  <p style="font-size:12px; letter-spacing:5px; color:#b59659;">
+    A JOURNEY OF LOVE
+  </p>
+
+  <h2 style="font-family:Georgia,serif; font-size:38px; font-weight:normal; margin:15px 0;">
+    Our Love Story
+  </h2>
+
+  <div style="width:60px; height:2px; background:#c6a15b; margin:20px auto;"></div>
+
+  <p style="max-width:550px; margin:0 auto; font-size:16px; line-height:1.9; color:#887767;">
+    Every beautiful love story has a beginning.
+    Two hearts, two journeys, and one special day
+    that brings them together forever.
+  </p>
+
+  <div style="display:flex; justify-content:center; align-items:center; gap:25px; flex-wrap:wrap; margin-top:40px;">
+
+
+<div style="width:240px; padding:20px; border:1px solid #e5d5b4; border-radius:15px; background:#fffaf0;">
+  <img src="images/groom.jpg" alt="Noel Binoy" style="width:180px; height:220px; object-fit:cover; border-radius:100px 100px 15px 15px;">
+  <h3 style="font-family:Georgia,serif; font-weight:normal;">Noel Binoy</h3>
+  <p style="font-size:13px; color:#887767;">The Groom</p>
+</div>
+
+<div style="font-size:30px; color:#c6a15b;">♡</div>
+
+<div style="width:240px; padding:20px; border:1px solid #e5d5b4; border-radius:15px; background:#fffaf0;">
+  <img src="images/bride.jpg" alt="Sisna Maria Remitta" style="width:180px; height:220px; object-fit:cover; border-radius:100px 100px 15px 15px;">
+  <h3 style="font-family:Georgia,serif; font-weight:normal;">Sisna Maria Remitta</h3>
+  <p style="font-size:13px; color:#887767;">The Bride</p>
+</div>
+
+
+  </div>
+
+  <p style="margin-top:40px; font-family:Georgia,serif; font-style:italic; color:#b59659;">
+    And so, forever begins... ♡
+  </p>
+
+</section>
+
+<section id="love-timeline" style="padding:70px 20px; text-align:center; background:#fffdf8; color:#765b45;">
+
+  <p style="font-size:12px; letter-spacing:5px; color:#b59659;">
+    EVERY LOVE HAS A STORY
+  </p>
+
+  <h2 style="font-family:Georgia,serif; font-size:36px; font-weight:normal; margin:15px 0;">
+    Our Journey to Forever
+  </h2>
+
+  <div style="width:60px; height:2px; background:#c6a15b; margin:20px auto;"></div>
+
+  <p style="max-width:520px; margin:0 auto; line-height:1.8; color:#887767;">
+    Every picture holds a memory, and every memory brings us closer to forever. ♡
+  </p>
+
+  <div style="max-width:600px; margin:45px auto 0; text-align:left;">
+
+
+<!-- FIRST MEET -->
+<div style="display:flex; align-items:center; gap:18px; margin-bottom:35px;">
+  <img src="images/first-meet.jpg" alt="First Meet"
+       style="width:100px; height:110px; object-fit:cover; border-radius:12px; flex-shrink:0; box-shadow:0 4px 12px #00000015;">
+  <div>
+    <p style="font-size:11px; letter-spacing:2px; color:#b59659;">THE BEGINNING</p>
+    <h3 style="font-family:Georgia,serif; font-weight:normal; margin:8px 0;">Our First Meet</h3>
+    <p style="color:#887767; line-height:1.8; margin:0;">The beginning of a beautiful story.</p>
+  </div>
+</div>
+
+<!-- FIRST MOMENTS -->
+<div style="display:flex; align-items:center; gap:18px; margin-bottom:35px;">
+  <img src="images/first-moments.jpg" alt="Our First Moments"
+       style="width:100px; height:110px; object-fit:cover; border-radius:12px; flex-shrink:0; box-shadow:0 4px 12px #00000015;">
+  <div>
+    <p style="font-size:11px; letter-spacing:2px; color:#b59659;">SPECIAL MEMORIES</p>
+    <h3 style="font-family:Georgia,serif; font-weight:normal; margin:8px 0;">Our First Moments</h3>
+    <p style="color:#887767; line-height:1.8; margin:0;">Little moments that became precious memories.</p>
+  </div>
+</div>
+
+<!-- GROWING TOGETHER -->
+<div style="display:flex; align-items:center; gap:18px; margin-bottom:35px;">
+  <img src="images/growing-together.jpg" alt="Growing Together"
+       style="width:100px; height:110px; object-fit:cover; border-radius:12px; flex-shrink:0; box-shadow:0 4px 12px #00000015;">
+  <div>
+    <p style="font-size:11px; letter-spacing:2px; color:#b59659;">OUR JOURNEY</p>
+    <h3 style="font-family:Georgia,serif; font-weight:normal; margin:8px 0;">Growing Together</h3>
+    <p style="color:#887767; line-height:1.8; margin:0;">Creating beautiful memories and looking forward to our future.</p>
+  </div>
+</div>
+
+<!-- OUR ENGAGEMENT -->
+
+<div style="display:flex; align-items:center; gap:18px; margin-bottom:35px;">
+  <img src="images/engagement.jpg" alt="Our Engagement"
+       style="width:100px; height:110px; object-fit:cover; border-radius:12px; flex-shrink:0; box-shadow:0 4px 12px #00000015;">
+
+  <div>
+    <p style="font-size:11px; letter-spacing:2px; color:#b59659;">A PROMISE OF FOREVER</p>
+    <h3 style="font-family:Georgia,serif; font-weight:normal; margin:8px 0;">Our Engagement 💍</h3>
+    <p style="color:#887767; line-height:1.8; margin:0;">A beautiful promise, bringing two hearts closer to forever. ♡</p>
+  </div>
+</div>
+
+
+
+  </div>
+</section>
+
+<section id="family-photo" style="padding:70px 20px; text-align:center; background:#fffdf8; color:#765b45;">
+
+  <p style="font-size:12px; letter-spacing:5px; color:#b59659;">
+    TWO FAMILIES, ONE BEAUTIFUL BEGINNING
+  </p>
+
+  <h2 style="font-family:Georgia,serif; font-size:36px; font-weight:normal; margin:15px 0;">
+    Together as One Family
+  </h2>
+
+  <div style="width:60px; height:2px; background:#c6a15b; margin:20px auto;"></div>
+
+  <p style="max-width:520px; margin:0 auto 30px; line-height:1.8; color:#887767;">
+    Two families, united by love, celebrating the beginning of a beautiful new chapter. ♡
+  </p>
+
+<img src="images/family.jpg"
+    alt="Our Family"
+    style="width:100%; max-width:650px; max-height:450px; object-fit:cover; border-radius:18px; box-shadow:0 8px 25px #00000018;">
+
+</section>
+
+
+<section id="couple-gallery" style="padding:70px 20px; text-align:center; background:#fffdf8; color:#765b45;">
+
+  <p style="font-size:12px; letter-spacing:5px; color:#b59659;">
+    OUR BEAUTIFUL MOMENTS
+  </p>
+
+  <h2 style="font-family:Georgia,serif; font-size:36px; font-weight:normal; margin:15px 0;">
+    A Gallery of Love
+  </h2>
+
+  <div style="width:60px; height:2px; background:#c6a15b; margin:20px auto;"></div>
+
+  <p style="max-width:520px; margin:0 auto 35px; line-height:1.8; color:#887767;">
+    Every picture tells a story, and every moment becomes a beautiful memory. ♡
+  </p>
+
+  <div style="display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:15px; max-width:1100px; margin:auto;">
+
+
+<img src="images/gallery1.jpg" alt="Our Memory 1" onclick="openGallery(this)" style="width:100%; height:220px; object-fit:cover; border-radius:12px; cursor:pointer;">
+<img src="images/gallery2.jpg" alt="Our Memory 2" onclick="openGallery(this)" style="width:100%; height:220px; object-fit:cover; border-radius:12px; cursor:pointer;">
+<img src="images/gallery3.jpg" alt="Our Memory 3" onclick="openGallery(this)" style="width:100%; height:220px; object-fit:cover; border-radius:12px; cursor:pointer;">
+<img src="images/gallery4.jpg" alt="Our Memory 4" onclick="openGallery(this)" style="width:100%; height:220px; object-fit:cover; border-radius:12px; cursor:pointer;">
+<img src="images/gallery5.jpg" alt="Our Memory 5" onclick="openGallery(this)" style="width:100%; height:220px; object-fit:cover; border-radius:12px; cursor:pointer;">
+<img src="images/gallery6.jpg" alt="Our Memory 6" onclick="openGallery(this)" style="width:100%; height:220px; object-fit:cover; border-radius:12px; cursor:pointer;">
+<img src="images/gallery7.jpg" alt="Our Memory 7" onclick="openGallery(this)" style="width:100%; height:220px; object-fit:cover; border-radius:12px; cursor:pointer;">
+<img src="images/gallery8.jpg" alt="Our Memory 8" onclick="openGallery(this)" style="width:100%; height:220px; object-fit:cover; border-radius:12px; cursor:pointer;">
+
+
+  </div>
+</section>
+
+<section id="childhood-memories" style="padding:70px 20px; text-align:center; background:#fffdf8; color:#765b45;">
+
+  <p style="font-size:12px; letter-spacing:5px; color:#b59659;">
+    LITTLE MOMENTS, BEAUTIFUL MEMORIES
+  </p>
+
+  <h2 style="font-family:Georgia,serif; font-size:36px; font-weight:normal; margin:15px 0;">
+    Childhood Memories
+  </h2>
+
+  <div style="width:60px; height:2px; background:#c6a15b; margin:20px auto;"></div>
+
+  <p style="max-width:550px; margin:0 auto; font-size:16px; line-height:1.9; color:#887767;">
+    Before they became partners in forever, they were two little dreamers
+    creating beautiful memories of their own. ♡
+  </p>
+
+  <div style="display:flex; justify-content:center; gap:30px; flex-wrap:wrap; margin-top:40px;">
+
+
+<div style="width:250px; padding:20px; background:#fffaf0; border:1px solid #e5d5b4; border-radius:15px;">
+  <img src="images/noel-childhood.jpg" alt="Noel's Childhood Photo"
+       style="width:100%; height:280px; object-fit:cover; border-radius:12px;">
+  <h3 style="font-family:Georgia,serif; font-weight:normal; margin-top:15px;">
+    Little Noel
+  </h3>
+  <p style="font-size:14px; color:#887767;">The little boy with big dreams ♡</p>
+</div>
+
+<div style="width:250px; padding:20px; background:#fffaf0; border:1px solid #e5d5b4; border-radius:15px;">
+  <img src="images/sisna-childhood.jpg" alt="Sisna's Childhood Photo"
+       style="width:100%; height:280px; object-fit:cover; border-radius:12px;">
+  <h3 style="font-family:Georgia,serif; font-weight:normal; margin-top:15px;">
+    Little Sisna
+  </h3>
+  <p style="font-size:14px; color:#887767;">The little girl with a beautiful smile ♡</p>
+</div>
+
+
+  </div>
+
+  <p style="margin-top:35px; font-family:Georgia,serif; font-style:italic; color:#b59659;">
+    Two beautiful childhoods, one beautiful future. ♡
+  </p>
+
+</section>
+
+<section id="best-wishes" style="padding:60px 20px; text-align:center; background:linear-gradient(135deg,#fffaf0,#f8eee5); color:#765b45;">
+
+  <p style="font-size:12px; letter-spacing:5px; color:#b59659;">
+    WITH LOVE & BEST WISHES
+  </p>
+
+  <div style="width:60px; height:2px; background:#c6a15b; margin:20px auto;"></div>
+
+  <p style="font-family:Georgia,serif; font-size:25px; line-height:2; margin:25px auto; max-width:700px;">
+    Stiyan  <span style="color:#c6a15b;">♡</span>
+    Sansia  <span style="color:#c6a15b;">♡</span>
+    Nevin 
+  </p>
+
+  <p style="font-family:Georgia,serif; font-size:16px; line-height:1.9; color:#887767; max-width:550px; margin:0 auto;">
+    Wishing Noel & Sisna a lifetime filled with love, happiness, and togetherness. ♡
+  </p>
+
+  <p style="font-family:Georgia,serif; font-size:24px; color:#b59659; margin-top:30px;">
+    With Love ♡
+  </p>
+
+</section>
+
+<div id="music-player" style="position:fixed; bottom:20px; right:20px; z-index:999;">
+  <button id="music-toggle" onclick="toggleMusic()" style="background:#c6a15b; color:white; border:none; border-radius:50px; padding:14px 20px; cursor:pointer; box-shadow:0 4px 15px #0002; font-size:14px;">
+    ♫ Play Music
+  </button>
+</div>
+
+<audio id="wedding-music" loop>
+  <source src="wedding-song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const weddingMusic = document.getElementById("wedding-music");
+  const musicButton = document.getElementById("music-toggle");
+window.addEventListener("load", () => {
+weddingMusic.play().then(() => {
+musicButton.textContent = "♫ Pause Music";
+}).catch(() => {
+musicButton.textContent = "♫ Play Music";
+});
+});
+
+  function toggleMusic() {
+    if (weddingMusic.paused) {
+      weddingMusic.play().then(() => {
+        musicButton.textContent = "♫ Pause Music";
+      }).catch(() => {
+        alert("Bro, first add your MP3 song as wedding-song.mp3 inside the WeddingWebsite folder!");
+      });
+    } else {
+      weddingMusic.pause();
+      musicButton.textContent = "♫ Play Music";
+    }
+  }
+</script>
+
+<style>
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("body > section");
+
+  sections.forEach(function (section) {
+    if (
+      section.id === "couple-gallery" ||
+      section.id === "family-photo" ||
+      section.id === "wedding-details" ||
+      section.id === "siblings-wishes" ||
+      section.id === "best-wishes"
+    ) {
+      section.classList.add("reveal");
+    }
+  });
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach(function (section) {
+      observer.observe(section);
+    });
+  } else {
+    document.querySelectorAll(".reveal").forEach(function (section) {
+      section.classList.add("visible");
+    });
+  }
+});
+</script>
+<style>
+.floating-heart {
+  position: fixed;
+  bottom: -40px;
+  z-index: 999;
+  pointer-events: none;
+  color: #c6a15b;
+  opacity: 0;
+  animation: floatHeart 7s ease-in forwards;
+}
+
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.65;
+  }
+  85% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-110vh) rotate(25deg);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-heart {
+    display: none;
+    animation: none;
+  }
+}
+/* Wedding invitation entrance animation */
+.hero .invitation {
+  animation: invitationAppear 1.5s ease-out both;
+}
+
+@keyframes invitationAppear {
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero .invitation {
+    animation: none;
+  }
+}
+css
+#wedding-popup {
+  position: fixed;
+  top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(30, 20, 20, 0.65);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#wedding-popup.popup-visible {
+  opacity: 1;
+}
+
+#wedding-popup .popup-card {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  max-height: 85vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 35px 24px;
+  text-align: center;
+  background: #fffaf2;
+  color: #594638;
+  border: 2px solid #c6a15b;
+  border-radius: 18px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.25);
+  transform: translateY(20px) scale(0.96);
+  transition: transform 0.3s ease;
+}
+
+#wedding-popup.popup-visible .popup-card {
+  transform: translateY(0) scale(1);
+}
+
+#wedding-popup .popup-close {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  color: #594638;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#wedding-popup .popup-flower {
+  color: #c6a15b;
+  font-size: 35px;
+}
+
+#wedding-popup .popup-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+#wedding-popup h2 {
+  margin: 10px 0;
+  color: #9c7740;
+  font-family: Georgia, serif;
+  font-weight: normal;
+}
+
+#wedding-popup .popup-and {
+  margin: 0;
+  color: #c6a15b;
+  font-family: Georgia, serif;
+  font-size: 25px;
+}
+
+#wedding-popup .popup-line {
+  width: 65px;
+  height: 1px;
+  margin: 20px auto;
+  background: #c6a15b;
+}
+
+#wedding-popup .popup-message {
+  line-height: 1.7;
+}
+
+#wedding-popup .popup-date {
+  margin-top: 22px;
+  color: #9c7740;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#wedding-popup .popup-day,
+#wedding-popup .popup-venue {
+  font-size: 13px;
+}
+
+#wedding-popup .popup-love {
+  margin-top: 22px;
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+/* Gold sparkle effect */
+.gold-sparkle {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  color: #c6a15b;
+  animation: sparkleFloat 3s ease-out forwards;
+}
+
+@keyframes sparkleFloat {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5) rotate(0deg);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(-15px) scale(1) rotate(45deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-65px) scale(0.3) rotate(90deg);
+  }
+}
+</style>
+
+<script>
+(function () {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  function createHeart() {
+    const heart = document.createElement("span");
+    heart.className = "floating-heart";
+    heart.textContent = Math.random() > 0.5 ? "♡" : "♥";
+    heart.style.left = Math.random() * 95 + "vw";
+    heart.style.fontSize = (14 + Math.random() * 12) + "px";
+    heart.style.animationDuration = (6 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function () {
+      heart.remove();
+    }, 11000);
+  }
+
+  setInterval(createHeart, 1800);
+})();
+</script>
+<script>
+(function () {
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+  function createSparkle() {
+    const sparkle = document.createElement("span");
+
+    sparkle.className = "gold-sparkle";
+    sparkle.textContent = Math.random() > 0.5 ? "✦" : "✧";
+
+    sparkle.style.left = (5 + Math.random() * 90) + "vw";
+    sparkle.style.top = (15 + Math.random() * 75) + "vh";
+    sparkle.style.fontSize = (10 + Math.random() * 10) + "px";
+
+    document.body.appendChild(sparkle);
+
+    setTimeout(function () {
+      sparkle.remove();
+    }, 3000);
+  }
+
+  setInterval(createSparkle, 1400);
+})();
+</script>
+</body>
+</html>
+```
